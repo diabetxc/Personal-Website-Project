@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Ezra Denny</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+<header>
+    <h1>Welcome!</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! My name is Ezra Denny and I am a student athlete on the Men's Track and Field team at Grand View University. I'm a Computer Science major and love programming!</p>
+        <img src="images/track_pfp.jpg" alt="Profile Picture">
+    </section>
+
+    <section id="my-work">
+        <h2>My Work</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Desc</th>
+                <th>Link</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Resume</td>
+                <td>A straight-forward approach laying out my career goals and aspirations alongside some of my work.</td>
+                <td><a href="https://1drv.ms/w/c/83685daf23f139c9/Eck58SOvXWgggIMTSAAAAAABEz9D2hPxv20U4NawMAin3Q?e=bSqEdH">View</a></td>
+            </tr>
+            <tr>
+                <td>GitHub</td>
+                <td>Although it's pretty bare at the moment, some more of my work on GitHub</td>
+                <td><a href="https://github.com/diabetxc">Visit</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Personal Website</p>
+</footer>
+</body>
+
+</html>

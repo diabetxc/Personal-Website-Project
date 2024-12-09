@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333333;
+}
+
+header {
+    background-color: darkred;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: darkred;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* About Section */
+#about {
+    padding: 2em;
+    text-align: center;
+}
+
+#about img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 1em;
+}
+
+/* My Work Section */
+#my-work {
+    padding: 2em;
+    background-color: white;
+}
+
+#my-work table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+#my-work th, #my-work td {
+    border: 1px solid lightgrey;
+    padding: 0.8em;
+    text-align: left;
+}
+
+#my-work th {
+    background-color: #333;
+    color: white;
+}
+
+/* Contact Section */
+#contact {
+    padding: 2em;
+    text-align: center;
+    background-color: darkred;
+    color: white;
+}
+
+form {
+    display: inline-block;
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.8em;
+    margin-top: 0.5em;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: red;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mobile Design implementation */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    #projects table {
+        font-size: 0.9em;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    #about img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    form input, form textarea, form button {
+        font-size: 0.9em;
+    }
+}
